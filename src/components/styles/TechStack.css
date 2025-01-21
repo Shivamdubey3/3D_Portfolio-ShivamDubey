@@ -1,0 +1,78 @@
+/* General Styles for TechStack */
+.techstack {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .techstack h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  /* Canvas Styling */
+  .tech-canvas {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Loader and Shadows for 3D Elements */
+  .mesh-physical-material {
+    color: #fff;
+    map: linear-gradient(45deg, #FF0000 0%, #00FF00 100%);
+    emissive: #ffffff;
+    emissiveIntensity: 0.3;
+    metalness: 0.5;
+    roughness: 1;
+    clearcoat: 0.1;
+  }
+  
+  /* Spot Light Effects */
+  .spotLight {
+    position: [20, 20, 25];
+    penumbra: 1;
+    angle: 0.2;
+    color: white;
+    castShadow: true;
+    shadow-mapSize: [512, 512];
+  }
+  
+  /* Pointer Styling */
+  .pointer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .techstack h2 {
+      font-size: 2rem;
+    }
+    .mesh-physical-material {
+      emissiveIntensity: 0.2;
+    }
+    .techstack {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background-color: #121212;
+      display: flex  ;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+    }
+  }
+  
